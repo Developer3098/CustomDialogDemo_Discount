@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSizeHeader">@dimen/_8ssp</dimen>
+    <dimen name="commonTextSize">@dimen/_12ssp</dimen>
+
+</resources>

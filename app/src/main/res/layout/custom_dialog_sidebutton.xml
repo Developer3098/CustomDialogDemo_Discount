@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/commonItemHeaderColorGrey"
+        android:orientation="vertical"
+       >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/commonColorYellow"
+                android:padding="@dimen/_10sdp"
+                android:text="Discount"
+                android:textAlignment="center"
+                android:layout_centerInParent="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@color/colorWhite" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/_5sdp"
+                android:id="@+id/imageViewCancel"
+                android:tint="@color/colorWhite"
+                app:srcCompat="@drawable/ic_close"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonInvoiceDiscountCustom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_weight="0.5"
+                android:textAllCaps="false"
+                android:background="@color/commonColorBlue"
+                android:padding="@dimen/_12sdp"
+                android:text="Invoice Discount Custom"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/commonTextSize" />
+
+            <Button
+                android:id="@+id/buttonMultiItemDiscount"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_weight="0.5"
+                android:textAllCaps="false"
+                android:background="@color/commonColorBlue"
+                android:padding="@dimen/_12sdp"
+                android:text="Multi Item Discount"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/commonTextSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonInvoiceStandard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_weight="0.5"
+                android:textAllCaps="false"
+                android:background="@color/commonColorBlue"
+                android:padding="@dimen/_12sdp"
+                android:text="Invoice Discount Standard"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/commonTextSize" />
+
+            <Button
+                android:id="@+id/buttonProcessCoupon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_weight="0.5"
+                android:textAllCaps="false"
+                android:background="@color/commonColorBlue"
+                android:padding="@dimen/_12sdp"
+                android:text="Process Coupon"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/commonTextSize" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@color/commonColorYellow"
+            android:text="Cancel"
+            android:visibility="gone"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/commonTextSize" />
+    </LinearLayout>
+</LinearLayout>
